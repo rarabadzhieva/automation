@@ -1,0 +1,11 @@
+Jenkins machines:
+	20026.local / 172.20.21.226 (master)
+	test-jenkins.local (slave)
+	tests-Mac-mini.local (slavePhone)
+
+admin
+qazwsx12
+
+
+Jenkins user: admin
+Jenkins pass: AutoMation!75
