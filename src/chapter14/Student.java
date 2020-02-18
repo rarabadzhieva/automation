@@ -1,17 +1,28 @@
 package chapter14;
 
-import java.util.Comparator;
-
 public class Student {
 
-    public static int studentsCount = 0;
+    static int studentsCount = 0;
 
     private String fullName = null;
     private int course = 0;
     private String email = null;
     private String phoneNumber = null;
-    private String specialization = null;
-    private String university = null;
+    private Spec specialization;
+    private Uni university;
+
+    public enum Spec {
+        IT,
+        FINANCE,
+        AUTO,
+        MATH
+    }
+
+    public enum Uni {
+        SU,
+        TU,
+        VTU
+    }
 
     public Student() {
         this(null);
@@ -33,11 +44,11 @@ public class Student {
         this(fullName, course, email, phoneNumber, null);
     }
 
-    public Student(String fullName, int course, String email, String phoneNumber, String specialization) {
+    public Student(String fullName, int course, String email, String phoneNumber, Spec specialization) {
         this(fullName, course, email, phoneNumber, specialization,null);
     }
 
-    public Student(String fullName, int course, String email, String phoneNumber, String specialization, String university) {
+    public Student(String fullName, int course, String email, String phoneNumber, Spec specialization, Uni university) {
         this.fullName = fullName;
         this.course = course;
         this.email = email;
@@ -80,23 +91,24 @@ public class Student {
     }
 
     public String getSpecialization() {
-        return this.specialization;
+        return this.specialization.toString();
     }
 
-    public void setSpecialization(String specialization) {
+    public void setSpecialization(Spec specialization) {
         this.specialization = specialization;
     }
 
     public String getUniversity() {
-        return this.university;
+        return this.university.toString();
     }
 
-    public void setUniversity(String university) {
+    public void setUniversity(Uni university) {
         this.university = university;
     }
 
     public void getStudentInfo() {
-        System.out.printf("chapter14.Student name %s%n course %d%n specialization %s%n university %s%n email address - %s%n phone number %s.%n",
+        System.out.printf("Student name %s%n course %d%n specialization %s%n university %s%n email address - %s%n phone number %s.%n",
                 fullName, course, specialization, university, email, phoneNumber);
     }
+
 }
