@@ -40,6 +40,6 @@ public class Cat {
 
     // Method sayMiau
     public void sayMiau() {
-        System.out.printf("Cat %s said: Miauuuuuu!%n", name);
+        System.out.printf("Cat %s said: Miauu!%n", name);
     }
 }
