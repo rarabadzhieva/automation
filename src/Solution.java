@@ -49,9 +49,6 @@ class AndhraPradesh extends Region{
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-<<<<<<< HEAD
-=======
->>>>>>> a9842f5ede64445da026a92fb0cb3e655db6a309
         checkPrime(2, 1);
         checkPrime(1);
     }
