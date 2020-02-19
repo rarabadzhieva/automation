@@ -49,19 +49,9 @@ class AndhraPradesh extends Region{
 
 public class Solution {
     public static void main(String[] args) throws IOException {
-//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-//        String s = reader.readLine().trim();
-//        Region region = null;
-//        switch (s) {
-//            case "WestBengal":
-//                region = new WestBengal();
-//                break;
-//            case "AndhraPradesh":
-//                region = new AndhraPradesh();
-//                break;
-//        }
-//        Flower flower = region.yourNationalFlower();
-//        System.out.println(flower.whatsYourName());
+<<<<<<< HEAD
+=======
+>>>>>>> a9842f5ede64445da026a92fb0cb3e655db6a309
         checkPrime(2, 1);
         checkPrime(1);
     }
